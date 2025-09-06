@@ -1,5 +1,4 @@
----
 deployment:
   tasks:
     - export DEPLOYPATH=/home/miubtqkc/public_html/wildbeast.layoutandmedia.com.br
-    - /bin/cp -R ./rest/* $DEPLOYPATH/
+    - /bin/cp -R ./* $DEPLOYPATH/
