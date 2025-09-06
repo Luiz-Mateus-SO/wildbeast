@@ -1,10 +1,7 @@
 deployment:
   tasks:
-    # Define o caminho do deploy (subdomínio)
     - export DEPLOYPATH=/home/miubtqkc/public_html/wildbeast.layoutandmedia.com.br
-
-    # Remove todos os arquivos anteriores do deploy
-    - /bin/rm -rf $DEPLOYPATH/*
-
-    # Copia todos os arquivos (incluindo ocultos, ex: .htaccess)
-    - /bin/cp -R . $DEPLOYPATH/
+    # Remove todos os arquivos, inclusive ocultos
+    - /bin/rm -rf $DEPLOYPATH/{*,.[!.]*}
+    # Copia todos os arquivos, incluindo ocultos
+    - /bin/cp -R .[!.]* * $DEPLOYPATH/
