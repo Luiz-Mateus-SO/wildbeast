@@ -6,11 +6,11 @@ li,
 blockquote {
   padding: 0px;
   margin: 0px;
-  background: black;
 }
 
 body {
   font-family: 'Vollkorn', Georgia, serif;
+  background: black;
 }
 
 li {
